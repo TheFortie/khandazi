@@ -6,8 +6,6 @@ from streamlit_navigation_bar import st_navbar
 import os
 
 st.set_page_config(layout="wide", initial_sidebar_state="collapsed")
-if 'current_page' not in st.session_state:
-    st.session_state['current_page'] = 'AUTHENTICATOR'
 
 col1, col2, col3 = st.columns([1,1,1])
 

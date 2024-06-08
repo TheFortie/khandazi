@@ -8,8 +8,7 @@ import pandas as pd
 import random
 
 st.set_page_config(layout="wide", initial_sidebar_state="collapsed")
-if 'current_page' not in st.session_state:
-    st.session_state['current_page'] = 'HOME'
+st.session_state['current_page'] = 'HOME'
 
 if "authenticated" not in st.session_state:
     switch_page('authenticator')
