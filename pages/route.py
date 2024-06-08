@@ -9,7 +9,11 @@ from folium.plugins import MeasureControl
 from folium.plugins import Draw
 
 st.set_page_config(layout="wide", initial_sidebar_state="collapsed")
-st.session_state['current_page'] = 'ROUTE'
+if "current_page" not in st.session_state:
+    st.session_state['current_page'] = 'ROUTE'
+
+elif "current_page" in st.session_state:
+    st.session_state['current_page'] = 'ROUTE'
 
 if "authenticated" not in st.session_state:
     switch_page('authenticator')
