@@ -15,5 +15,6 @@ with col2:
     password_button = st.button('IK WIL NAAR GEORGIE', use_container_width=True)
 
     if password_button and password.lower() == 'vlammen':
-        st.session_state['authenticated'] = True
-        switch_page('HOME')
+        if "authenticated" not in st.session_state:
+            st.session_state['authenticated'] = True
+            switch_page('HOME')
