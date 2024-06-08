@@ -4,3 +4,4 @@ streamlit-navigation-bar==3.3.0
 streamlit-extras==0.4.3
 streamlit-calendar==1.2.0
 pandas
+openpyxl
