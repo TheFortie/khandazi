@@ -73,12 +73,8 @@ if page == "INSPIRATIE" and st.session_state['current_page'] != 'INSPIRATIE':
 col1, col2, col3 = st.columns([1,6,1])
 
 with col2:
-    # st.markdown(f"<h1 style='text-align: center; color: {georgia_grey};'>KHANDARI</h1>", unsafe_allow_html=True)
-    # st.markdown(f"<p style='text-align: center; color: {georgia_grey};'>TIJD OM TE VLAMMEN</h1>", unsafe_allow_html=True)
-
     with st.container(border=True):
-        st.markdown(f"<p style='text-align: center; color: {georgia_grey};'>KHANDZAGI</h1>", unsafe_allow_html=True)
-
+        st.markdown(f"<p style='text-align: center; color: {georgia_grey};'>KHANDAZI</h1>", unsafe_allow_html=True)
 
     cola, colb = st.columns([1,1])
     
